@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fitur Keranjang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="fixed top-0 bg-gray-700 p-3 w-full flex justify-between text-white">
+      <div>
+        <a href="#">Home</a>
+      </div>
+      <div>
+        <input type="text" placeholder="Cari barang anda" class="searchbar px-4 pt-1 text-sky-500 w-96 rounded-lg">
+      </div>
+      <div>
+        <a href="#" class="tampil-keranjang ms-2"><span class="keranjang_count mx-2">0</span>Keranjang</a>
+      </div>
+    </nav>
+
+    <!--isi konten-->
+    <div class="grid grid-cols-3 gap-10 m-5 div-produk">
+
+    </div>
+
+    <!--Modal-->
+    <div class = "absolute inset-0 flex justify-center items-center modal hidden">
+      <div class = "bg-gray-500 p-5 w-full m-32 rounded text-white">
+        
+        <div class="flex justify-between item-center">
+          <div class="font-bold text-xl">Keranjang anda</div>
+          <div class="font-bold text-xl hover:cursor-pointer btn-tutup">TUTUP</div>
+        </div>
+        
+        <div class="keranjang grid grid-cols-4 text-black gap-5">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="main1.js"></script>
+  </body>
+</html>
